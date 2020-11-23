@@ -15,7 +15,7 @@
       rgba(64, 67, 138, 0.3) 29.95%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url(../images/hero\ 1.png);
+    url(../images/hero1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -235,7 +235,7 @@
       #40438a 79.09%,
       rgba(116, 115, 198, 0) 100%
     ),
-    url(../images/contact\ bg.png);
+    url(../images/main_temb.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -274,7 +274,6 @@
 .unleash_content p,
 .need_content p {
   line-height: 200%;
-  /* margin: 120px 20px; */
 }
 .need_content a,
 .unleash_content a {
@@ -299,7 +298,7 @@
       rgba(153, 197, 150, 0) 50.52%,
       rgba(253, 250, 124, 0) 100%
     ),
-    url(../images/unleash.png);
+    url(../images/makerspace.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -321,7 +320,6 @@
   line-height: 40px;
   padding-top: 50px;
   margin: auto;
-  /* display: none; */
 }
 .clients {
   height: 900px;
@@ -335,9 +333,6 @@
   width: 100%;
   height: 500px;
 }
-/* .clients * {
-  border: 1px solid lightblue;
-} */
 .clients .owl-theme {
   height: 600px;
 }
@@ -391,7 +386,7 @@
       rgba(159, 20, 255, 0.5) 0%,
       rgba(184, 82, 255, 0.5) 100%
     ),
-    url(../images/123.png);
+    url(../images/makan.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -492,146 +487,6 @@
     margin: 100px 0;
   }
 }
-/* @media (max-width: 1440px) {
-  .about_us {
-    width: 100%;
-    
-  }
-  .aboutus_txt {
-    padding-left: 150px;
-    margin-top: 150px;
-  }
-  .aboutus_txt h1 {
-    margin: 5px;
-  }
-  .aboutus_txt p {
-    margin: 40px 0;
-  }
-  .aboutus_img img {
-    width: 330px;
-    height: 200px;
-    margin-top: 50px;
-  }
-} */
-/* @media (max-width: 1024px) {
-  .about_us {
-    width: 100%;
-
-  }
-  .aboutus_txt {
-    padding-left: 130px;
-    margin-top: 100px;
-  }
-  .aboutus_txt h1 {
-    margin: 5px;
-    font-size: 25px;
-  }
-  .aboutus_txt p {
-    margin: 10px 0;
-    font-size: 12px;
-    margin-left: 10px;
-  }
-  .aboutus_img img {
-    width: 200px;
-    height: 100px;
-    margin-bottom: 70px;
-    margin-left: 10px;
-  }
-} */
-/* @media (max-width: 962px) {
-  .about_us {
-    width: 100%;
-    height: 700px;
-  }
-  .aboutus_txt {
-    padding-left: 130px;
-    margin-top: 100px;
-  }
-  .aboutus_txt h1 {
-    margin: 5px;
-    font-size: 25px;
-  }
-  .aboutus_txt p {
-    margin: 10px 0;
-    font-size: 12px;
-    margin-left: 10px;
-  }
-  .aboutus_img img {
-    width: 200px;
-    height: 100px;
-    margin-bottom: 70px;
-    margin-left: 0px;
-  }
-} */
-/* @media (max-width: 952px) {
-  .about_us {
-    width: 100%;
-    height: 850px;
-  }
-  .aboutus_txt {
-    padding-left: 110px;
-    margin-top: 100px;
-  }
-  .aboutus_txt h1 {
-    margin: 5px;
-    font-size: 25px;
-  }
-  .aboutus_txt span {
-    font-size: 30px; }
-  .aboutus_txt p {
-    margin: 10px 0;
-    font-size: 12px;
-    margin-left: 10px;
-  }
-  .aboutus_img img {
-    width: 200px;
-    height: 100px;
-  }
-} */
-
-/* @media (max-width: 426px) {
-  .about_us {
-    width: 100%;
-   
-    background: #1eb7ee;
-  }
-  .aboutus_txt {
-    padding-left: 50px;
-    margin-bottom: 200px;
-    color: blue;
-    margin-top: 30px;
-    width: 100%;
-  }
-  .aboutus_txt h1 {
-    margin: 5px;
-    font-size: 16px;
-  }
-  .aboutus_txt span {
-    font-size: 25px; }
-  .aboutus_txt p {
-    margin: 80px 0px;
-    font-size: 15px;
-    margin-left: 10px;
-  }
-  .aboutus_img img {
-    width: 200px;
-    height: 100px;
-  
-    
-  }
-  .aboutus_content .container .dflex {
-    justify-content: center;
-    flex-direction: column;
-  }
-  .aboutus_txt a{
-    width: 150px;
-  }
- 
-  .about_us .about_head header {
-    margin-top: 300px;
-   
-  }
-  } */
 @media (max-width: 992px) {
   .ourservices_card {
     flex-basis: 34%;

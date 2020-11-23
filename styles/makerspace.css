@@ -290,6 +290,17 @@
   cursor: pointer;
   margin: px 0;
 }
+.ms_link {
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+}
+.m_titel:hover {
+  cursor: pointer;
+}
+.m_titel:hover .ms_link {
+  color: #47b9a4;
+}
 /* ===========media=========== */
 @media (max-width: 1140px) {
   .store_box {

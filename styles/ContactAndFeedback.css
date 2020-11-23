@@ -7,9 +7,9 @@
 }
 .CF_Box {
   width: 749px;
-  min-height: 667px;
+  min-height: 666px;
   border-radius: 10px;
-  background-image: url(../images/CF_form_pic.png);
+  background-image: url(../images/CF_form_pic.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
