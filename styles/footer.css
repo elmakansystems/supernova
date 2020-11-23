@@ -1,0 +1,211 @@
+.Footer {
+  background-color: #18181f;
+}
+
+.Footer a {
+  text-decoration: none;
+}
+
+.Footer ul {
+  list-style: none;
+}
+
+.Footer header {
+  text-transform: capitalize;
+  color: #ccc;
+}
+
+.Footer header.footer_header {
+  color: #ccc;
+  position: relative;
+  top: 20px;
+  margin-bottom: 20px;
+}
+
+.Footer .upper_footer {
+  padding-top: 20px;
+  color: #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.Footer .upper_footer .footer_links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.Footer .upper_footer .footer_links ul {
+  list-style: none;
+  display: inline;
+  padding-left: 0;
+}
+
+.Footer .upper_footer .footer_links ul li {
+  margin: 15px 0;
+}
+
+.Footer .upper_footer .footer_links ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+  text-transform: capitalize;
+  overflow: hidden;
+}
+
+.Footer .upper_footer .footer_links ul li a::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  left: 0px;
+  bottom: -5px;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.Footer .upper_footer .footer_links ul li a:hover::after {
+  width: 100%;
+}
+
+.Footer .upper_footer .footer_links ul:nth-child(2) {
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.Footer .upper_footer .social_links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 16px;
+}
+
+.Footer .upper_footer .social_links .social_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+}
+
+.Footer .upper_footer .social_links .social_row a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.Footer .upper_footer .social_links .social_row a img {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin: 0 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.Footer .upper_footer .social_links .social_row a img:first-of-type {
+  margin-left: 0;
+}
+
+.Footer .upper_footer .social_links .social_row a img:hover {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.Footer .upper_footer::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 50%;
+  background-color: #777;
+  width: 85%;
+  height: 3px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.Footer .middle_footer {
+  margin-bottom: 40px;
+}
+
+.Footer .middle_footer ul {
+  color: #ccc;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Footer .middle_footer ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.Footer .middle_footer ul li span {
+  margin-left: 10px;
+}
+
+.Footer .lower_footer {
+  text-align: center;
+  padding: 5px 0;
+  color: #fff;
+  background-color: #151515;
+}
+
+@media (max-width: 576px) {
+  .Footer .upper_footer .footer_links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Footer .upper_footer .footer_links ul:nth-child(2) {
+    margin-left: 0px;
+    margin-top: -30px;
+  }
+  .Footer .upper_footer .social_links {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-top: 16px;
+  }
+  .Footer .upper_footer .social_links .social_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px 0;
+  }
+  .Footer .middle_footer {
+    margin-bottom: 40px;
+  }
+  .Footer .middle_footer ul {
+    color: #ccc;
+    margin-top: 40px;
+    display: block;
+    padding-left: 0;
+  }
+  .Footer .middle_footer ul li {
+    margin: 15px 0;
+  }
+  .Footer .middle_footer ul li span {
+    margin-left: 10px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

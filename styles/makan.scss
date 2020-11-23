@@ -1,0 +1,279 @@
+// * {
+//   border: 1px solid lightblue;
+// }
+
+.flex {
+  display: flex;
+}
+img {
+  width: 100%;
+}
+.hero {
+  min-height: 500px;
+  margin: 80px 0 0px;
+}
+.header {
+  text-align: center;
+  background-color: #b852ff;
+  color: #fff;
+  padding: 10px 0;
+  margin: 20px 0;
+}
+.header h1 {
+  font-size: 28px;
+}
+.hero_img {
+  text-align: center;
+}
+.hero_img svg {
+  width: 600px;
+}
+.hero_txt p {
+  width: 70%;
+  margin: auto;
+  line-height: 2;
+  color: #777;
+}
+.txt {
+  flex: 1;
+  color: #777;
+}
+.txt p {
+  margin: 10px 0px 30px;
+  width: 70%;
+  line-height: 2;
+}
+
+.img {
+  flex: 1;
+}
+.btn_link {
+  background-color: #219fcc;
+  color: #fff;
+  text-decoration: none;
+  width: 200px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 10px;
+}
+
+._img svg {
+  width: 600px;
+  margin: 20px 0;
+}
+._txt p {
+  width: 80%;
+  color: #777;
+  line-height: 2;
+}
+.makan_form {
+  width: 50%;
+  margin: auto;
+}
+.from_row {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  label {
+    flex-basis: 20%;
+    text-align: left;
+    text-transform: capitalize;
+    color: #777;
+  }
+  input,
+  textarea {
+    flex-basis: 300px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    color: #777;
+  }
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  .submit_btn {
+    width: 200px;
+    color: #fff;
+    padding: 0;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+// ===========svg animations==========
+
+.svg {
+  animation: animate 1s ease forwards;
+  opacity: 0;
+}
+.svg-2 {
+  animation: animate-2 1s ease forwards;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.svg_1 {
+  animation-delay: 0.1s;
+}
+.svg_2 {
+  animation-delay: 0.2s;
+}
+.svg_3 {
+  animation-delay: 0.3s;
+}
+
+.upper_part {
+  animation: up 0.6s ease-in-out;
+}
+.lower_part {
+  animation: lp 0.6s ease-in-out;
+}
+.point {
+  animation: p 0.7s ease-in-out;
+}
+.makan {
+  animation: makan 1s ease-in-out;
+}
+.systems {
+  animation: systems 1s ease-in-out;
+}
+@keyframes animate-2 {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes animate {
+  from {
+    transform: rotate(-30deg) translateY(100%) scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0deg) translateY(0%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes lp {
+  from {
+    transform: translateX(-3%) translateY(-30%) scale(1.2);
+  }
+  to {
+    transform: translateX(0%) translateY(0%) scale(1);
+  }
+}
+@keyframes p {
+  from {
+    transform: translateX(-1%) translateY(-59%);
+  }
+  to {
+    transform: translateX(0%) translateY(0%);
+  }
+}
+
+@keyframes makan {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes systems {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes up {
+  from {
+    transform: translateX(3.5%) translateY(25%) scale(0.7);
+  }
+  to {
+    transform: translateX(0%) translateY(0%) scale(1);
+  }
+}
+// ======media queries==========
+@media (max-width: 992px) {
+  .makan_form {
+    width: 80%;
+  }
+  .txt p {
+    width: 100%;
+  }
+  .makan_form .from_row {
+    flex-direction: column;
+    height: fit-content;
+    input,
+    textarea {
+      flex-basis: 30px;
+    }
+    label {
+      margin-bottom: 5px;
+    }
+  }
+  .submit_btn {
+    margin: auto !important;
+  }
+}
+
+@media (max-width: 772px) {
+  .hero {
+    min-height: fit-content;
+    margin-bottom: 20px;
+  }
+  .hero_img {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    svg {
+      width: 100%;
+    }
+  }
+  .hero_txt p {
+    width: 100%;
+  }
+  .s2_content .flex {
+    flex-direction: column;
+    .img {
+      width: 90%;
+      margin: auto;
+    }
+    .txt {
+      text-align: center;
+      margin-bottom: 20px;
+      p {
+        width: 100%;
+      }
+    }
+  }
+  ._img {
+    width: 90%;
+    svg {
+      width: 100%;
+    }
+  }
+}

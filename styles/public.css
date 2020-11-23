@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+body {
+  font-family: ubuntu;
+  min-height: 100vh;
+}
+body,
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+}
+.flex {
+  display: flex;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+.container {
+  max-width: 1440px;
+}
+@media (max-width: 1280px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 99%;
+  }
+}

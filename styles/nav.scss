@@ -1,0 +1,151 @@
+.main-header {
+  background: linear-gradient(90deg, #40438a 0%, #21a0cd 100%);
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  .container {
+    position: relative;
+  }
+}
+
+.main-header {
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+  }
+  ul {
+    list-style: none;
+  }
+
+  .logo-img {
+    width: 50px;
+    height: 40px;
+    object-fit: cover;
+  }
+  .logo {
+    color: #fff;
+  }
+  .logo {
+    flex: 1;
+    a {
+      .row {
+        height: 60px;
+        align-items: center;
+        span {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .nav-links {
+    flex: 1;
+  }
+  .nav-ul .row {
+    align-items: center;
+    height: 60px;
+  }
+  .nav-ul {
+    li {
+      margin: 0px 5px;
+      transition: 0.5s;
+    }
+    a {
+      padding: 5px 10px;
+      display: inline-block;
+      transition: 0.3s;
+      color: #fff;
+      &:hover {
+        background-color: #ffd54f;
+      }
+    }
+  }
+
+  .subnav-cont {
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0px 10px;
+  }
+
+  .subnav-header {
+    display: flex;
+    align-items: center;
+    img {
+      width: 15px;
+      height: 15px;
+      transition: 0.5s;
+      margin-left: 10px;
+      position: relative;
+      top: 3px;
+    }
+  }
+  .subnav-cont {
+    padding: 5px 10px;
+    position: relative;
+    .sub-nav {
+      display: none;
+      height: 0;
+      color: #fff;
+      position: absolute;
+      bottom: -1px;
+      left: -5px;
+
+      li {
+        background: linear-gradient(90deg, #40438a 0%, #21a0cd 100%);
+
+        a {
+          width: 100%;
+          display: inline-block;
+          padding: 10px;
+        }
+      }
+    }
+    &:hover {
+      img {
+        transform: rotate(180deg);
+      }
+      .sub-nav {
+        width: 175px;
+        display: block;
+      }
+    }
+  }
+
+  .menu-btn {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 25px;
+    z-index: 100;
+  }
+  .menu-btn span {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin: 4px 0;
+    position: relative;
+    transition: 0.5s;
+    border-radius: 2px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-header {
+    height: 60px;
+    .logo {
+      flex: 0;
+    }
+    .menu-btn {
+      display: flex;
+    }
+    .nav-links {
+      display: none;
+    }
+  }
+}
