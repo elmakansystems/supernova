@@ -1,4 +1,4 @@
-window.onload = ()=>{
+    document.styleSheets[document.styleSheets.length-1].disabled  = true
     const menu = document.querySelector(".menu-btn")
     let toggleState = true ; 
     let addStyle = ()=>{
@@ -9,7 +9,4 @@ window.onload = ()=>{
         }
         document.styleSheets[document.styleSheets.length-1].disabled  = toggleState
     }
-    
     menu.addEventListener("click"  , addStyle)
-    document.styleSheets[document.styleSheets.length-1].disabled  = true
-}
