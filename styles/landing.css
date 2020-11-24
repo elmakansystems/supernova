@@ -46,9 +46,7 @@
   text-align: left;
   position: absolute;
   top: 20%;
-  /* transform: translatey(0px); */
   margin: 10px 120px;
-  /* line-height: 70px; */
 }
 .slide_content h1 {
   font-size: 64px;
@@ -72,22 +70,6 @@
   text-decoration: none;
   line-height: 40px;
 }
-/* >>>>>>>>>>>>>>about_us>>>>>>>>>>>>> */
-.about_us {
-  width: 100%;
-  min-height: 100vh;
-  display: none;
-}
-.about_us .about_head header {
-  opacity: 0.96;
-  text-align: center;
-  font-size: 36px;
-  margin-top: 60px;
-  line-height: 40px;
-  padding-top: 50px;
-  margin: auto;
-}
-
 .gradient::before,
 .gradient::after {
   content: "";
@@ -129,7 +111,6 @@
 }
 .aboutus_content .dflex {
   align-items: center;
-  /* padding: 15px; */
 }
 .aboutus_txt {
   color: #fff;
@@ -189,15 +170,10 @@
   margin: 50px 0;
   background: #414089;
   border-radius: 20px;
-  /* flex: 1; */
 }
 .ourservices_card .flex {
-  /* flex-basis: 32%; */
   justify-content: center;
-  /* margin: 20px 10px; */
-
   padding: 20px 15px;
-  /* border-radius: 10px; */
 }
 .ourservices_card .flex .card_img img {
   align-items: center;
@@ -240,7 +216,7 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
-.need .container {
+.need {
   position: relative;
 }
 
@@ -254,7 +230,6 @@
   z-index: 1000;
   top: 0;
   bottom: 0;
-
   height: 800px;
 }
 .unleash_content .unleash_head header,
@@ -432,7 +407,6 @@
     width: 100%;
     min-height: 100vh;
     text-align: center;
-    /* margin-left: 10px; */
   }
   .slide_content h1 {
     width: 100%;
@@ -477,9 +451,6 @@
   }
 }
 @media (max-width: 1881px) {
-  .about_us {
-    width: 100%;
-  }
   .aboutus_txt h1 {
     margin: 0px;
   }
@@ -513,5 +484,72 @@
 @media (max-width: 772px) {
   .Elmakan .logo img {
     width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .clients_head header {
+    font-size: 20px;
+  }
+  .clients_head .gradient::before,
+  .clients_head .gradient::after {
+    width: 120%;
+    left: -10%;
+  }
+  .clients_head .gradient::after {
+    left: 20%;
+    width: 30%;
+  }
+}
+@media (max-width: 456px) {
+  .clients_head .gradient::before,
+  .clients_head .gradient::after {
+    width: 120%;
+    left: -10%;
+  }
+  .clients_head .gradient::after {
+    width: 30%;
+    left: 20%;
+  }
+}
+@media (max-width: 772px) {
+  .need,
+  .unleash {
+    background-position: right;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../images/main_temb.jpg);
+    background-repeat: no-repeat;
+    color: #fff;
+    background-size: cover;
+    min-height: 600px;
+  }
+  .unleash_content p,
+  .need_content p {
+    width: 80%;
+    margin: auto;
+  }
+  .need_content,
+  .unleash_content {
+    background: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+  }
+  .need_content .need_head header,
+  .unleash_content .unleash_head header {
+    width: 100%;
+  }
+  .unleash {
+    background-position: left;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../images/makerspace.jpg);
+    min-height: 450px;
+    background-repeat: no-repeat;
+
+    background-size: cover;
   }
 }
